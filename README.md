@@ -3,6 +3,9 @@
 
 This document provides an overview of the key steps undertaken in assessment, focusing on transforming unstructured JSON data into actionable insights through a structured relational data model.
 
+
+
+
 ## First: Review Existing Unstructured Data and Diagram a New Structured Relational Data Model
 
 Please refer to [ER Diagram.png](https://github.com/adityasahugit/Fetch-Rewards-Coding-Exercise/blob/main/ER_diagram.png)
