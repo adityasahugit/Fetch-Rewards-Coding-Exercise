@@ -12,9 +12,9 @@ Please refer to [ER Diagram.png](https://github.com/adityasahugit/Fetch-Rewards-
 
 - I have renamed the primary keys of all the 3 tables from _id to user_id, brand_id and receipt_id for respective tables in the new simplified structure of the database.
 
-- I have create a new table **rewardReceipt** from the 'rewardsReceiptItemList' column of the receipt table. This new table has been assigned a new primary key as **'rewards_receipt_id'**. 
+- I have create a new table **rewardReceipt** from the 'rewardsReceiptItemList' column of the receipt table. The rewardReceipt table tracks individual items within transactions that are eligible for rewards. It plays a critical role in connecting purchases with specific rewards criteria, allowing for the calculation and assignment of reward points or benefits to users based on their purchases. 
 
-- Since the brandCode is not unique in this table. Also due to single receipt_id having multiple reward receipt items it was not feasible to make a composite unique key from receipt_id.
+-  This new table has been assigned a new primary key as **'rewards_receipt_id'**.Since the brandCode is not unique in this table. Also due to single receipt_id having multiple reward receipt items it was not feasible to make a composite unique key from receipt_id.
 
 ## Second: Write a query that directly answers a predetermined question from a business stakeholder
 
