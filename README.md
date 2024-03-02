@@ -10,7 +10,7 @@ This document provides an overview of the key steps undertaken in assessment, fo
 
 Please refer to [ER Diagram.png](https://github.com/adityasahugit/Fetch-Rewards-Coding-Exercise/blob/main/ER_diagram.png)
 
-- I have renamed the primary keys of all the 3 tables from _id to user_id, brand_id and receipt_id for better understanding in the new simplified structure of the database.
+- I have renamed the primary keys of all the 3 tables from _id to user_id, brand_id and receipt_id for respective tables in the new simplified structure of the database.
 
 - I have create a new table **rewardReceipt** from the 'rewardsReceiptItemList' column of the receipt table. This new table has been assigned a new primary key as **'rewards_receipt_id'**. 
 
