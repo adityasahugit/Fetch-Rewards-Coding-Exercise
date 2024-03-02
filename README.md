@@ -14,7 +14,7 @@ Please refer to [ER Diagram.png](https://github.com/adityasahugit/Fetch-Rewards-
 
 - I have create a new table **rewardReceipt** from the 'rewardsReceiptItemList' column of the receipt table. The rewardReceipt table tracks individual items within transactions that are eligible for rewards. It plays a critical role in connecting purchases with specific rewards criteria, allowing for the calculation and assignment of reward points or benefits to users based on their purchases. 
 
--  This new table has been assigned a new primary key as **'rewards_receipt_id'**.Since the brandCode is not unique in this table. Also due to single receipt_id having multiple reward receipt items it was not feasible to make a composite unique key from receipt_id.
+-  This new table has been assigned a new primary key as **'rewards_receipt_id'**given that 'brandCode' lacks uniqueness within this table. Additionally, the presence of multiple reward receipt items associated with a single 'receipt_id' precludes the creation of a composite unique key based on 'receipt_id'.
 
 ## Second: Write a query that directly answers a predetermined question from a business stakeholder
 
@@ -23,7 +23,7 @@ SQL queries can be found in the [sql](https://github.com/adityasahugit/Fetch-Rew
 
 ## Third: Evaluate Data Quality Issues in the Data Provided
 
-Detailed evaluation of the Data Quality Issues can be found inside the [data_quality](https://github.com/adityasahugit/Fetch-Rewards-Coding-Exercise/tree/main/data_quality) folder which contains Python notebooks using Jupyter Notebook for analysis of each of the json.
+Detailed evaluation of the Data Quality Issues can be found inside the [data_quality](https://github.com/adityasahugit/Fetch-Rewards-Coding-Exercise/tree/main/data_quality) folder which contains Jupyter Notebook(Python scripts) for analysis of individual json.
 
 Also new structured json files can be found inside the [new_data](https://github.com/adityasahugit/Fetch-Rewards-Coding-Exercise/tree/main/data_quality/new_data) folder
 
